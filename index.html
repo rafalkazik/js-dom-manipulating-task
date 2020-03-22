@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript: Elementy DOM</title>
+    <meta name="author" content="Mateusz Bogolubow">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="article">
+        <section class="article__introduction">
+            <h1>JavaScript</h1>
+            <p>JavaScript (skrócie JS) – <span class="tooltip"
+                    data-url="https://pl.wikipedia.org/wiki/J%C4%99zyk_skryptowy" data-tooltip-type="text"
+                    data-tooltip-content="Język skryptowy (ang. script language) – język programowania obsługujący skrypty[1]. Często służący do kontrolowania określonej aplikacji.">skryptowy</span>
+                <span class="tooltip" data-url="https://pl.wikipedia.org/wiki/J%C4%99zyk_programowania"
+                    data-tooltip-type="text"
+                    data-tooltip-content="Język programowania – zbiór zasad określających, kiedy ciąg symboli tworzy program komputerowy oraz jakie obliczenia opisuje.">język
+                    programowania</span>, stworzony przez firmę <span class="tooltip"
+                    data-url="https://pl.wikipedia.org/wiki/Netscape_Communications" data-tooltip-type="text"
+                    data-tooltip-content="Netscape Communications Corporation (poprzednio pod firmą Mosaic Communications Corporation, MCC) – przedsiębiorstwo tworzące oprogramowanie, założone przez Marca Andreessena i Jamesa H. Clarka w kwietniu 1994 roku w celu wydania własnej wersji przeglądarki internetowej opartej na innej przeglądarce NCSA Mosaic znanej od tego czasu pod nazwą Netscape Navigator lub także pod nazwą kodową Mozilla.">Netscape</span>,
+                najczęściej stosowany na <span class="tooltip"
+                    data-url="https://pl.wikipedia.org/wiki/Strona_internetowa" data-tooltip-type="image"
+                    data-tooltip-content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Firefox_57.0.png/640px-Firefox_57.0.png">stronach
+                    internetowych</span>. Twórcą JavaScriptu jest <span class="tooltip"
+                    data-url="https://pl.wikipedia.org/wiki/Brendan_Eich" data-tooltip-type="image"
+                    data-tooltip-content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg/480px-Brendan_Eich_Mozilla_Foundation_official_photo.jpg">Brendan
+                    Eich</span><sup>[4]</sup>. Pod koniec lat 90. XX wieku organizacja ECMA wydała na podstawie
+                JavaScriptu standard języka skryptowego o nazwie ECMAScript, aktualnie rozwijaniem tego standardu
+                zajmuje się komisja TC39<sup>[5]</sup>.</p>
+        </section>
+
+        <section class="article_list">
+            <!-- <ul>
+                <li data-id="1"><a href="#Zastosowanie">Zastosowanie</a></li>
+                <li data-id="44"><a href="#Historia">Historia</a>
+                    <ul>
+                        <li><a href="#Dialekty">Dialekty</a></li>
+                        <li><a href="#Java">Java</a></li>
+                    </ul>
+                </li>
+                <li data-id="24"><a href="#JavaScript_dla_WWW">JavaScript dla WWW</a>
+                    <ul>
+                        <li><a href="#Interakcja">Interakcja</a></li>
+                        <li><a href="#Osadzanie">Osadzanie</a></li>
+                    </ul>
+                </li>
+                <li data-id="6"><a href="Linki zewnętrzne">Przypisy</a></li>
+            </ul> -->
+        </section>
+
+        <article class="article__content">
+            <h2 id="Zastosowanie">Zastosowanie</h2>
+            <p>Najczęściej spotykanym zastosowaniem języka JavaScript są strony internetowe. Skrypty te służą najczęściej do zapewnienia interakcji poprzez reagowanie na zdarzenia, walidacji danych wprowadzanych w formularzach lub tworzenia złożonych efektów wizualnych. Skrypty JavaScriptu uruchamiane przez strony internetowe mają znacznie ograniczony dostęp do komputera użytkownika. Po stronie serwera JavaScript może działać w postaci node.js lub Ringo[6].</p>
+            <p>W języku JavaScript można także pisać pełnoprawne aplikacje. Fundacja Mozilla udostępnia środowisko złożone z technologii takich jak XUL, XBL, XPCOM oraz JSLib. Umożliwiają one tworzenie korzystających z zasobów systemowych aplikacji o graficznym interfejsie użytkownika dopasowującym się do danej platformy. Przykładem aplikacji napisanych z użyciem JS i XUL może być klient IRC o nazwie ChatZilla, domyślnie dołączony do pakietu Mozilla. Microsoft udostępnia biblioteki umożliwiające tworzenie aplikacji JScript jako część środowiska Windows Scripting Host. Ponadto JScript.NET jest jednym z podstawowych języków środowiska .NET. Istnieje także stworzone przez IBM środowisko SashXB dla systemu Linux, które umożliwia tworzenie w języku JavaScript aplikacji korzystających z GTK+, GNOME i OpenLDAP.</p>
+
+            <h2 id="Historia">Historia</h2>
+            <p>W 1996 r. organizacja ECMA rozpoczęła pracę nad specyfikacją języka JavaScript pozbawioną odniesień na temat interpretującego kod środowiska. Język opisany w standardzie ECMA-262 został nazwany ECMAScript. Od tego momentu nazwa JavaScript oznacza jedynie jeden z nadzbiorów języka ECMAScript. Pierwsza wersja standardu była bliska JavaScriptowi w wersji 1.1. Trzecia jako pierwsza rozszerzyła istniejące implementacje.</p>
+
+            <h3 id="Dialekty">Dialekty</h3>
+            <p>Od czasu powstania JavaScriptu opracowywane były różne jego odmiany interpretowane za pomocą osobnych silników. Oprócz implementacji wprowadzonych do przeglądarek internetowych należy do nich ActionScript aplikacji Adobe Flash oraz UnityScript w silniku Unity (nie jest już on obsługiwany od wersji 2018.2[12]).</p>
+            <h3 id="Java">Java</h3>
+            <p>Początkowo Netscape nazwała nowy język LiveScript. Nazwa została jednak szybko zmieniona na JavaScript wskutek biznesowych porozumień pomiędzy Netscape a firmą Sun Microsystems (współwłaścicielem znaku handlowego JavaScript jest Oracle Corporation, które przejęło Sun Microsystems w 2010 roku). Skrypty JavaScriptu oraz aplety Javy (mimo odrębności tych dwóch języków) mogą się wzajemnie komunikować dzięki dostępnej w przeglądarkach Netscape, Mozilla i Opera technologii LiveConnect.</p>
+
+            <h2 id="JavaScript_dla_WWW">JavaScript dla WWW</h2>
+            <h3 id="Interakcja">Interakcja</h3>
+            <p>Wszystkie implementacje JavaScriptu dostępne w przeglądarkach internetowych dostarczają obiektów reprezentujących drzewo dokumentu. Mogą także umożliwiać tworzenie ciasteczek, manipulowanie oknami przeglądarki, wyświetlanie prostych okien dialogowych, pobieranie informacji o przeglądarce, zarządzanie jej pluginami oraz arkuszami stylów. Reagują także na zdarzenia wywoływane w interfejsie.</p>
+            <p>Podczas manipulowania zawartością dokumentu problem stanowił brak jego ustandaryzowanego modelu. W czwartym pokoleniu przeglądarek dostęp do niektórych elementów dokumentu w Netscape możliwy był przy użyciu kolekcji document.layers, za to w Internet Explorerze – document.all. Organizacja W3C opracowała jednak jednolity obiektowy model obsługiwany przez wszystkie współczesne przeglądarki (w tym Operę od wersji 6, Konquerora od wersji 3 oraz Safari). Tablice all i layers zostały uznane za przestarzałe i wsparcie dla nich zostało praktycznie wycofane.</p>
+
+            <h3 id="Osadzanie">Osadzanie</h3>
+            <p> języku HTML za umieszczanie skryptów JS odpowiedzialny jest element &lt;script> z opcjonalnymi argumentami type o wartości text/javascript i language o wartości javascript.</p>
+            <p>Jeżeli kod znajduje się w dokumencie XHTML, w celu uniknięcia zinterpretowania niektórych operatorów jako elementów składni języka należy otoczyć skrypt sekcją CDATA lub zapisać je w postaci encji[14]. W XHTML nie można używać argumentu language w znaczeniu określenia wersji języka JS (atrybut, jeżeli jest użyty, powinien przyjąć dwuznakowe wartości opisane standardem ISO 639, np. EN, DE, PL).</p>
+            <p>Zewnętrzne skrypty dodawane są także przy użyciu powyższego znacznika, uwzględniając jedynie parametr src z nazwą pliku zawierającego kod skryptu. Typ MIME dla samodzielnych plików JavaScript to application/javascript lub przestarzały text/javascript[15].</p>
+        </article>
+        <footer class="article__footer">źródło: <a href="https://pl.wikipedia.org/wiki/JavaScript">wikipedia.org</a></footer>
+    </main>
+
+    <script src="./assets/js/introduction.js"></script>
+    <script src="./assets/js/list.js"></script>
+</body>
+
+</html>

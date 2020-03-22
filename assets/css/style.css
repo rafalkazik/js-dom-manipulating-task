@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.article {
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.tooltip {
+    position: relative;
+    z-index: 1;
+}
+
+.tooltip:hover {
+    z-index: 100;
+}
+
+.tooltip:hover .tooltip__box {
+    display: block;
+}
+
+.tooltip__box {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2); 
+    display: none;
+    max-height: 200px;
+    overflow: auto;
+    padding: 20px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 300px;
+}
+
+.tooltip__box--image {
+    max-height: none;
+    padding: 0;
+}
+
+.tooltip__image {
+    max-width: 100%;
+    display: block;
+}
