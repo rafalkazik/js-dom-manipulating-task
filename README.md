@@ -1,3 +1,11 @@
+> ⭐ ***README** to coś więcej niż opis. Poprzez nie **pokazujesz swoje mocne strony** – swoją dokładność, sposób myślenia i podejście do rozwiązywania problemów. Niech Twoje README pokaże, że masz **świetne predyspozycje do rozwoju!***
+> 
+> 🎁 *Zacznij od razu. Skorzystaj z **[szablonu README i wskazówek](https://github.com/devmentor-pl/readme-template)**.* 
+
+&nbsp;
+
+
+
 # JavaScript: Elementy DOM
 
 Będziemy musieli utworzyć nowe elementy w drzewie DOM, dodać do wybranych elementów odpowienie klasy, atrybutu czy zawartość i oczywiście wyszukać odpowiedniej miejsca, w których będziemy wykonywać modyfikacje.
@@ -216,3 +224,8 @@ Płynne przejscie jest zrealizowane przez CSS! Zobacz reguły CSS przypisane do 
 
 
 
+&nbsp;
+
+> ⭐ ***README** to coś więcej niż opis. Poprzez nie **pokazujesz swoje mocne strony** – swoją dokładność, sposób myślenia i podejście do rozwiązywania problemów. Niech Twoje README pokaże, że masz **świetne predyspozycje do rozwoju!***
+> 
+> 🎁 *Zacznij od razu. Skorzystaj z **[szablonu README i wskazówek](https://github.com/devmentor-pl/readme-template)**.* 
