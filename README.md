@@ -38,18 +38,22 @@ Musimy zmodyfikować element o klasie `.tooltip` w taki sposób, aby generował 
 Posiada mnóstwo informacji. Nam zależy na tym, aby wykorzystać te informacje w taki, aby utworzyć taką zawartość:
 
 ```html
-<a href="https://pl.wikipedia.org/wiki/J%C4%99zyk_skryptowy">
-    skryptowy
-</a>
-<span class="tooltip__box tooltip__box--text">
-    Język skryptowy (ang. script language) – język programowania obsługujący skrypty[1]. Często służący do kontrolowania określonej aplikacji.
+<span 
+    class="tooltip"
+    ...
+>
+    <a href="https://pl.wikipedia.org/wiki/J%C4%99zyk_skryptowy">
+        skryptowy
+    </a>
+    <span class="tooltip__box tooltip__box--text">
+        Język skryptowy (ang. script language) – język programowania obsługujący skrypty[1]. Często służący do kontrolowania określonej aplikacji.
+    </span>
 </span>
-
 ```
 
-Czyli zawartośc tego elementu tj. tekst `skryptowy` zamienić (nadpisać) na dwa znaczniki (ang. *tags*). Należy zwrócić uwagę, że pierwszy z nich tj `<a/>` zwiera tekst, który znajdował się w elemencie o klasie `.tooltip`. 
+Czyli zawartośc elementu o klasie `.tooltip` tj. tekst `skryptowy` zamienić (nadpisać) na dwa znaczniki (ang. *tags*). Należy zwrócić uwagę, że pierwszy z nich tj. `<a>` zwiera tekst, który znajdował się w elemencie o klasie `.tooltip`. 
 
-Aby rozwiązać ten problem musimy dla każdego elementu (`.queyrSelectorAll()` i pętla `for` lub `.forEach`), który zawiera te dane (tj. `.tooltip`) utworzyć dwa znaczniki tj. `<a/>` oraz `<span/>` z odpowiednimi klasami i zawartością. Następnie te elementy dodać do `.tooltip` jako kolejne dzieci tego elementu.
+Aby rozwiązać ten problem musimy dla każdego elementu (`.queyrSelectorAll()` i pętla `for` lub `.forEach`), który zawiera te dane (tj. `.tooltip`) utworzyć dwa znaczniki tj. `<a>` oraz `<span>` z odpowiednimi klasami i zawartością. Następnie te elementy dodać do `.tooltip` jako kolejne dzieci tego elementu.
 
 Odpowiednią zawartość możemy pobrać z `dataset`, który posiada dane typu adres dla link-u => `.dataset.url`, typ tooltip-u => `.dataset.tooltipType` oraz jego zawartość => `.dataset.tooltipContent`.
 
