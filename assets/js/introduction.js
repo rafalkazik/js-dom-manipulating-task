@@ -2,7 +2,7 @@ const tooltip = document.querySelectorAll(".tooltip");
 
 // const tooltipArr = [...tooltip];
 
-tooltip.forEach(function (element, index) {
+tooltip.forEach(function (element) {
   const aElement = document.createElement("a");
   const spanElement = document.createElement("span");
   const imgElement = document.createElement("img");
